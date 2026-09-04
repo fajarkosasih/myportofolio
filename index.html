@@ -1,155 +1,345 @@
-p<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fajar | IT Support & Data Science Portfolio</title>
+    <meta name="description" content="Portfolio Fajar Kosasih — IT Support & Computer Hardware Technician, Data Science learner. Founder of OTWIT.ID and Vibesco Digital under Epankila Creative.">
+    <title>Fajar Kosasih | IT Support Portfolio</title>
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fajar Kosasih | IT Support Portfolio">
+    <meta property="og:description" content="IT Support & Computer Hardware Technician, Data Science learner. Founder of OTWIT.ID and Vibesco Digital under Epankila Creative.">
+    <meta property="og:image" content="pp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fajar Kosasih | IT Support Portfolio">
+    <meta name="twitter:description" content="IT Support & Computer Hardware Technician, Data Science learner. Founder of OTWIT.ID and Vibesco Digital under Epankila Creative.">
+    <meta name="twitter:image" content="pp.png">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="brand">
+                <span class="brand-mark">FK</span>
+                <span>Fajar Kosasih</span>
+            </a>
 
-<section class="hero">
-    
-    <div class="hero-content">
-        <h1>Hi, I'm Fajar Kosasih 👋</h1>
-        <h2>IT Support Specialis and Data Scientist</h2>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <p>
-            Passionate about delivering fast and effective technical support to improve user productivity.
-            I help solve technical issues, maintain systems, and ensure smooth IT operations.
-            Skilled in troubleshooting hardware, software, and network problems.
-        </p>
-        <ul class="skills">
-            <li>✔ Hardware & Software Troubleshooting</li>
-            <li>✔ Basic Networking (LAN, IP, Router)</li>
-            <li>✔ Windows & Mac Support</li>
-            <li>✔ IT Helpdesk & User Support</li>
-        </ul>
-
-    <div class="buttons">
-        <a href="javascript:void(0)" class="btn-primary" onclick="showProjects()">Tentang Saya</a>
-        <a href="https://epankilacreative-pt.github.io/web.company/" target="_blank" class="btn-secondary">OTWIT.ID</a>
-    </div>
-
-    </div>
-
-    <div class="hero-image">
-        <img src="pp.png" alt="profile">
-    </div>
-</section>
- <section id="projects" class="projects hidden">
-    <h2>My IT Support Projects</h2>
-    <p style="margin-bottom:20px; color:#94a3b8;">
-    Here are some practical IT support scenarios I have worked on.
-</p>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>IT Helpdesk Ticket Simulation</h3>
-            <p>
-                Simulated handling of user issues including slow computer, network errors,
-                and software installation problems.
-            </p>
-            <span>Tools: Windows, Remote Desktop</span>
-        </div>
-
-        <div class="project-card">
-            <h3>Local Network Setup (LAN)</h3>
-            <p>
-                Configured small office network including IP addressing, router setup,
-                and device connectivity testing.
-            </p>
-            <span>Tools: Router, IP Config, Ping</span>
-        </div>
-
-        <div class="project-card">
-            <h3>Laptop Troubleshooting & Maintenance</h3>
-            <p>
-                Diagnosed and fixed hardware/software issues such as overheating,
-                slow performance, and OS errors.
-            </p>
-            <span>Tools: Windows Tools, BIOS</span>
-        </div>
-
-    </div>
-
-    <br>
-<section class="certificates">
-    <h2>Certificates</h2>
-    <p class="certificate-subtitle">
-        Some certifications that support my journey in IT Support and Data Science.
-    </p>
-<br>
-    <div class="certificate-grid">
-
-        <div class="certificate-card">
-            <div class="certificate-icon">
-                <i class="fas fa-certificate"></i>
+            <div class="nav-menu" id="navMenu">
+                <a href="#education">Pendidikan</a>
+                <a href="#experience">Pengalaman Kerja</a>
+                <a href="#main-project">OTWIT.ID</a>
+                <a href="#vibesco-project">Vibesco Digital</a>
+                <a href="#contact" class="nav-cta">Hubungi Saya</a>
             </div>
-            <h3>Google IT Support</h3>
-            <p>Completed training in troubleshooting, networking, system administration, and IT support fundamentals.</p>
-            <span>Google Career Certificates · 2025</span>
-            <a href="#" target="_blank">View Certificate</a>
-        </div>
+        </nav>
+    </header>
 
-        <div class="certificate-card">
-            <div class="certificate-icon">
-                <i class="fas fa-chart-line"></i>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Available for IT Support & Technical Service</span>
+                <h1>Hi, I'm Fajar Kosasih 👋</h1>
+                <h2>IT Support Specialist & Computer Hardware Technician</h2>
+
+                <p>
+                    Saya membantu pengguna, sekolah, kantor, dan UMKM menyelesaikan masalah komputer, laptop,
+                    printer, jaringan dasar, serta kebutuhan teknis harian dengan pendekatan cepat, rapi, dan mudah dipahami.
+                </p>
+
+                <ul class="skills" aria-label="Core skills">
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i> Hardware & Software Troubleshooting</li>
+                    <li><i class="fa-solid fa-network-wired"></i> Basic Networking, LAN, IP, Router</li>
+                    <li><i class="fa-brands fa-windows"></i> Windows, Mac, Printer, and User Support</li>
+                    <li><i class="fa-solid fa-chart-line"></i> Learning Data Science & Web Development</li>
+                </ul>
+
+                <div class="buttons">
+                    <a href="#main-project" class="btn-primary">Lihat Project Utama</a>
+                    <a href="#education" class="btn-secondary">Pendidikan</a>
+                    <a href="#experience" class="btn-secondary">Pengalaman Kerja</a>
+                </div>
             </div>
-            <h3>Introduction Data Science</h3>
-            <p>Learned data cleaning, visualization, and introductory machine learning concepts.</p>
-            <span>Cisco · 2026</span>
-            <a href="https://www.credly.com/badges/a8bcd3e0-f4ed-4aec-8d95-260b77bddfb9/public_url" target="_blank">View Certificate</a>
-        </div>
 
-        <div class="certificate-card">
-            <div class="certificate-icon">
-                <i class="fas fa-network-wired"></i>
+            <div class="hero-image">
+                <img src="pp.png" alt="Portrait of Fajar Kosasih in a professional office setting">
             </div>
-            <h3>Web Development</h3>
-            <p>Create a website using HTML, CSS, Javascript and also Wordpress.</p>
-            <span>MySkill · 2024</span>
-            <a href="https://member.codingstudio.id/certificate/75C105794B-75B51A5453-75B51A0826" target="_blank">View Certificate</a>
+        </section>
+
+        <section class="otwit-spotlight" id="main-project">
+            <div class="spotlight-content">
+                <span class="section-label">Project utama</span>
+                <h2>OTWIT.ID by Epankila Creative</h2>
+                <p>
+                    OTWIT.ID adalah layanan IT support panggilan untuk membantu pelanggan menyelesaikan masalah laptop,
+                    komputer, printer, jaringan, instalasi, dan kebutuhan teknis lainnya. Project ini menjadi wajah utama
+                    saya dalam membangun layanan teknologi yang legal, profesional, dan siap dipercaya pelanggan.
+                </p>
+
+                <div class="spotlight-points">
+                    <div>
+                        <i class="fa-solid fa-bolt"></i>
+                        <strong>Fast Response</strong>
+                        <span>Dibangun untuk kebutuhan teknis yang butuh penanganan cepat.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-building-shield"></i>
+                        <strong>Business Ready</strong>
+                        <span>Cocok untuk sekolah, kantor, UMKM, dan pengguna rumahan.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <strong>On Demand IT Support</strong>
+                        <span>Bantuan teknis saat dibutuhkan tanpa langganan bulanan.</span>
+                    </div>
+                </div>
+
+                <div class="buttons spotlight-buttons">
+                    <a href="https://epankilacreative-pt.github.io/web.company/" target="_blank" class="btn-primary btn-large">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi OTWIT.ID
+                    </a>
+                    <a href="https://wa.me/6289663485537" target="_blank" class="btn-secondary btn-large">
+                        <i class="fab fa-whatsapp"></i> Diskusi Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="spotlight-card">
+                <img src="pp2.png" alt="Fajar Kosasih presenting IT support portfolio project">
+                <div class="floating-badge">
+                    <i class="fa-solid fa-star"></i>
+                    Main Portfolio Project
+                </div>
+            </div>
+        </section>
+
+        <section class="otwit-spotlight vibesco-spotlight" id="vibesco-project">
+            <div class="spotlight-card">
+                <svg class="vibesco-mock" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi platform belajar digital Vibesco Digital">
+                    <rect x="0" y="0" width="480" height="360" rx="28" fill="#0b0f1f"/>
+                    <rect x="0" y="0" width="480" height="44" rx="28" fill="#161135"/>
+                    <circle cx="26" cy="22" r="5" fill="#a78bfa"/>
+                    <circle cx="44" cy="22" r="5" fill="#6d28d9"/>
+                    <circle cx="62" cy="22" r="5" fill="#4c1d95"/>
+                    <rect x="32" y="70" width="180" height="18" rx="6" fill="#a78bfa"/>
+                    <rect x="32" y="98" width="260" height="10" rx="5" fill="#4b4467"/>
+                    <rect x="32" y="116" width="200" height="10" rx="5" fill="#4b4467"/>
+                    <rect x="32" y="150" width="130" height="150" rx="16" fill="#1a1533" stroke="#a78bfa" stroke-opacity="0.35"/>
+                    <rect x="46" y="164" width="102" height="66" rx="10" fill="#2d2358"/>
+                    <rect x="46" y="240" width="102" height="10" rx="5" fill="#a78bfa"/>
+                    <rect x="46" y="258" width="70" height="8" rx="4" fill="#4b4467"/>
+                    <rect x="176" y="150" width="130" height="150" rx="16" fill="#1a1533" stroke="#a78bfa" stroke-opacity="0.35"/>
+                    <rect x="190" y="164" width="102" height="66" rx="10" fill="#2d2358"/>
+                    <rect x="190" y="240" width="102" height="10" rx="5" fill="#a78bfa"/>
+                    <rect x="190" y="258" width="70" height="8" rx="4" fill="#4b4467"/>
+                    <rect x="320" y="150" width="130" height="150" rx="16" fill="#1a1533" stroke="#a78bfa" stroke-opacity="0.35"/>
+                    <rect x="334" y="164" width="102" height="66" rx="10" fill="#2d2358"/>
+                    <rect x="334" y="240" width="102" height="10" rx="5" fill="#a78bfa"/>
+                    <rect x="334" y="258" width="70" height="8" rx="4" fill="#4b4467"/>
+                </svg>
+                <div class="floating-badge">
+                    <i class="fa-solid fa-book-open"></i>
+                    Digital Learning Products
+                </div>
+            </div>
+
+            <div class="spotlight-content">
+                <span class="section-label">Unit usaha lainnya</span>
+                <h2>Vibesco Digital</h2>
+                <p>
+                    Vibesco Digital adalah unit usaha digital agency yang sedang saya bangun di bawah Epankila Creative,
+                    berfokus pada produk pembelajaran digital seperti ebook dan mini course yang mudah diakses.
+                </p>
+
+                <div class="spotlight-points">
+                    <div>
+                        <i class="fa-solid fa-book"></i>
+                        <strong>Produk Digital</strong>
+                        <span>Ebook dan mini course untuk pembelajaran mandiri.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-seedling"></i>
+                        <strong>Terus Berkembang</strong>
+                        <span>Unit usaha yang sedang dibangun dan dikembangkan bertahap.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <strong>Digital Agency</strong>
+                        <span>Sisi kreatif saya di luar dunia teknisi dan support.</span>
+                    </div>
+                </div>
+
+                <div class="buttons spotlight-buttons">
+                    <a href="https://vibescodigital.my.id" target="_blank" class="btn-primary btn-large">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi Vibesco Digital
+                    </a>
+                    <a href="https://wa.me/6289663485537" target="_blank" class="btn-secondary btn-large">
+                        <i class="fab fa-whatsapp"></i> Diskusi Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-heading">
+                <span class="section-label">Education</span>
+                <h2>Pendidikan</h2>
+                <p>Fondasi akademik dan pembelajaran yang mendukung perjalanan saya di bidang IT Support, Web, dan Data Science.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-card">
+                    <span class="timeline-year">Current</span>
+                    <h3>Universitas Terbuka</h3>
+                    <p>Sedang memperkuat kemampuan akademik dan teknis, terutama pada bidang data, pemrograman, dan sistem informasi.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">Vocational</span>
+                    <h3>SMK 1 Perintis Depok</h3>
+                    <p>Dasar pendidikan formal yang membentuk kedisiplinan kerja, komunikasi, dan orientasi layanan pelanggan.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">Continuous Learning</span>
+                    <h3>Online Courses & Certifications</h3>
+                    <p>Belajar IT Support, Web Development, Data Science, jaringan dasar, dan troubleshooting melalui kursus serta praktik langsung.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alt-section" id="experience">
+            <div class="section-heading">
+                <span class="section-label">Experience</span>
+                <h2>Pengalaman Kerja</h2>
+                <p>Pengalaman lapangan dalam menangani problem teknis secara langsung, dari level pengguna sampai perangkat.</p>
+            </div>
+
+            <div class="experience-grid">
+                <article class="experience-card featured-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+                    <h3>Computer, Laptop & Printer Technician</h3>
+                    <p>
+                        Berpengalaman menangani instalasi ulang, upgrade SSD/RAM, troubleshooting Windows, perbaikan performa,
+                        printer, jaringan kecil, serta diagnosa kerusakan perangkat untuk pelanggan personal maupun kantor.
+                    </p>
+                    <span>Core: Hardware, Software, Printer, User Support</span>
+                </article>
+
+                <article class="experience-card">
+                    <div class="card-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>IT Helpdesk & User Support</h3>
+                    <p>Membantu pengguna memahami masalah teknis, membuat solusi bertahap, dan memastikan pekerjaan mereka kembali berjalan.</p>
+                    <span>Tools: Windows, Remote Support, Basic Network</span>
+                </article>
+
+                <article class="experience-card">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web & App Learning Projects</h3>
+                    <p>Membangun website sederhana, aplikasi stok berbasis web, dan portfolio menggunakan HTML, CSS, JavaScript, Python, dan Flask.</p>
+                    <span>Tools: HTML, CSS, JavaScript, Python, Flask</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <span class="section-label">Practice Projects</span>
+                <h2>My IT Support Projects</h2>
+                <p>Beberapa skenario praktik yang menunjukkan kemampuan problem solving saya di dunia IT Support.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Printer Test Page Tool</h3>
+                    <p>Tool kalibrasi & pengujian kualitas cetak printer yang saya bangun dan gunakan langsung sebagai bagian dari layanan OTWIT.ID.</p>
+                    <span>Tools: HTML, CSS, JavaScript</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Local Network Setup</h3>
+                    <p>Konfigurasi jaringan kantor kecil, IP addressing, router setup, tes koneksi, dan troubleshooting dasar.</p>
+                    <span>Tools: Router, IP Config, Ping</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Laptop Troubleshooting</h3>
+                    <p>Diagnosa masalah overheating, performa lambat, error OS, BIOS setting, storage, RAM, dan maintenance perangkat.</p>
+                    <span>Tools: Windows Tools, BIOS</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section certificates" id="certificates">
+            <div class="section-heading">
+                <span class="section-label">Certificates</span>
+                <h2>Certificates</h2>
+                <p>Beberapa sertifikasi yang mendukung perjalanan saya di IT Support, Data Science, dan Web Development.</p>
+            </div>
+
+            <div class="certificate-grid">
+                <article class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Fundamental Front-End Web Development II</h3>
+                    <p>Dasar pengembangan front-end web menggunakan HTML, CSS, dan JavaScript.</p>
+                    <span>Coding Studio</span>
+                    <a href="https://member.codingstudio.id/certificate/75C105794B-77EB94A2A4-75B51A0826" target="_blank">View Certificate</a>
+                </article>
+
+                <article class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Introduction Data Science</h3>
+                    <p>Belajar data cleaning, visualization, dan konsep awal machine learning.</p>
+                    <span>Cisco · 2026</span>
+                    <a href="https://www.credly.com/badges/a8bcd3e0-f4ed-4aec-8d95-260b77bddfb9/public_url" target="_blank">View Certificate</a>
+                </article>
+
+                <article class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Membuat website menggunakan HTML, CSS, JavaScript, dan WordPress.</p>
+                    <span>MySkill · 2024</span>
+                    <a href="https://member.codingstudio.id/certificate/75C105794B-75B51A5453-75B51A0826" target="_blank">View Certificate</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-box">
+                <span class="section-label">Let's connect</span>
+                <h2>Butuh IT Support atau kolaborasi project?</h2>
+                <p>
+                    Saya terbuka untuk pekerjaan IT Support, Helpdesk, teknisi komputer, serta pengembangan project kecil berbasis web.
+                    Hubungi saya langsung melalui WhatsApp.
+                </p>
+
+                <a href="https://wa.me/6289663485537" target="_blank" class="contact-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    Contact Me on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Fajar Kosasih. All rights reserved.</p>
+
+        <div class="socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/afajarkosasih/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/afajar_k/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@epankila" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
+    </footer>
 
-    </div>
-</section>
-
-<section class="contact-section">
-    <div class="contact-box">
-        <h2>Let's Work Together</h2>
-        <p>
-            I'm open to IT Support, Helpdesk, and beginner Data Science opportunities.
-            Feel free to contact me directly via WhatsApp.
-        </p>
-
-        <a href="https://wa.me/6289663485537" target="_blank" class="contact-btn">
-            <i class="fab fa-whatsapp"></i>
-            Contact Me on WhatsApp
-        </a>
-    </div>
-</section>
-
-<footer class="footer">
-    <p>© 2026 Fajar. All rights reserved.</p>
-
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/afajarkosasih/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/afajar_k/" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@epankila" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-    </div>
-</footer>
-
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
