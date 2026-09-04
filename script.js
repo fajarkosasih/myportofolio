@@ -1,13 +1,20 @@
-function showProjects() {
-    const section = document.getElementById("projects");
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
 
-    if (section.classList.contains("hidden")) {
-        section.classList.remove("hidden");
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+    });
 
-        setTimeout(() => {
-            section.classList.add("show");
-        }, 50);
-
-        section.scrollIntoView({ behavior: "smooth" });
-    }
+    navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        });
+    });
 }
